@@ -1,0 +1,118 @@
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(/resultSummaryComponent/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HankenGrotesk;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.container > *{
+    max-width: 50%;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.result-wrapper{
+    text-align: center;
+    background-color: #4936f2;
+    border-radius: 25px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.result{
+    background-color: #381fdd;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 150px;
+    width: 150px;
+}
+
+.total{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.summary-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.categories-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.category{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category.reaction{
+    background-color: #fff6f5;
+}
+
+.category.memory{
+    background-color: #fffbf2;
+}
+
+.category.verbal{
+    background-color: #f2fbfa;
+}
+
+.category.visual{
+    background-color: #f3f3fd;
+}
+
+.btn button{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #414141;
+    color: #ffffff;
+}
+
+
+@media (max-width: 520px){
+    .container{
+        flex-direction: column;
+    }
+
+    .container > *{
+        width: 100%;
+        max-width: 100%;
+    }
+}
